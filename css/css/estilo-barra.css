@@ -1,0 +1,26 @@
+
+.nav-item{
+    padding-left: 30px;
+    
+}
+
+.navbar-nav{
+    margin-right: 100px;
+}
+
+
+.verde:hover{
+    color: rgb(112, 255, 136) !important;
+}
+
+@font-face {
+    font-family: "Gameplay";
+    src: url("../fontes/Gameplay.woff");
+}
+
+.marca{
+    font-family: "Gameplay";
+    font-size: 30px;
+    color: rgb(112, 255, 136);
+}
+

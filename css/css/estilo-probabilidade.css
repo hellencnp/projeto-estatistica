@@ -1,0 +1,31 @@
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+    overflow-x: hidden;
+}
+
+
+#conteudo{
+    width: 60%;
+    margin: auto;
+    margin-top: 200px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #888;
+}
+
+.caixa{
+    text-align: center;
+}
+
+#categoria{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a{
+    margin-left: 20px;
+}

@@ -1,0 +1,365 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    overflow: hidden;
+}
+  
+body{
+    background-image:url('../imagens/img2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased !important;
+    background-attachment: fixed;
+}
+
+#bloco1{
+    height: 100%;
+    background-color: #4dff74;
+    float: left;    
+    clear: both;
+    padding-right: 15%;
+    padding-bottom: 100%;
+    
+}
+
+
+#bloco2{
+    font-family: "Comfortaa", sans-serif;
+    float: left;
+    display: block;
+   
+
+}
+
+.login{
+    /*
+    width: 320px;
+    height: 450px;*/
+    border: 2px solid #000;
+    margin: auto;
+    border-radius: 80px 0px 80px 0px;
+    color: #ffffff;
+    background-color: rgba(0,0,5,0.8);
+    top: 45%;
+    left: 65%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 0px 28px;
+    padding-bottom: 40px;
+    
+    
+}
+.usuario{
+    /*
+    border: 50%;
+    position: absolute;
+    top:-50px;
+    left: 112px;
+    
+*/
+    position: relative;
+    left:35%;
+    top:-30px;
+}
+
+#link a{
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+
+h1{
+    margin: 0;
+    padding-top:  0;
+    padding-left: 0;
+    padding-bottom:20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+
+}
+.login label{
+    margin:0;
+    padding:0;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.login input{
+    width: 100%;
+    margin-bottom:21px;
+
+}
+
+.login input[type='text'], input[type='password']{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height:40px;
+    color:white;
+    font-size: 16px;
+
+}
+
+
+.login a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color:#4b4b4b;
+    transition: 0.2s;
+    /*margin-top: 20px;*/
+
+} 
+
+.login a:hover{
+    transition: 0.2s;
+    color:#4dff74;
+}
+
+#botao{
+    display: block;
+    border:none;
+    outline: none;
+    height:35px;
+    color:#000;
+    background: #62ff84;
+    border-radius: 20px;
+    transition: 0.2s;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    position: relative;
+    left:10%;
+
+
+}
+#botao:hover{
+    cursor: pointer;
+    background: #3cc95b;
+    transition: 0.2s;
+    color: #ffffff;
+
+
+}
+#btn{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 16px;
+    position: relative;
+    top:-8px;
+    left: 0px;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+
+
+@font-face {
+    font-family: "Gameplay";
+    src: url("../fontes/Gameplay.woff");
+}
+
+#bloco1{
+    opacity: 1;
+}
+
+#logo{
+    width: 200px;
+    position: relative;
+    left: 20px;
+    top:170px;
+
+}
+
+span#gama{
+    font-family: "Gameplay";
+    display: block;
+    font-size: 45px;
+    position: relative;
+    
+    left: 150px;
+    top:-80px;
+    
+}
+
+span#tm{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top:-100px;
+    left: 285px;
+}
+
+
+span#slogan{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top:-100px;
+    left: 150px;
+}
+
+
+img#cubo{
+    width: 120px;
+    position: relative;
+    left: 10px;
+    top:30px;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/*
+
+
+.login{
+    width: 320px;
+    height: 450px;
+    border: 2px solid #000;
+    border-radius: 80px 0px 80px 0px;
+    color: #ffffff;
+    background-color: rgba(0,0,5,0.8);
+    top: 42%;
+    left: 65%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 68px 28px;
+}
+
+*/
+
+
+
+@media (max-width: 575.98px) {
+    #bloco1{
+        background-color: transparent;
+    }
+
+    div.login{
+        
+        left: 50%;
+        border: hidden;
+        
+        
+    }
+
+    
+    div.login a{
+        margin-top: 20px;
+        font-size: 15px;
+        
+        
+    }
+    
+    #imgUser{
+        visibility: hidden;
+    }
+
+    #botao{
+        position: relative;
+        left: 0px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #bloco1{
+        background-color: transparent;
+    }
+
+    div.login{
+        
+        left: 50%;
+        border: hidden;
+        
+    }
+
+    div.login a{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    #imgUser{
+        visibility: hidden;
+    }
+
+    #botao{
+        position: relative;
+        left: 0px;
+    }
+}
+    
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #bloco1{
+        background-color: transparent;
+    }
+    div.login{
+        
+        left: 50%;
+        border: hidden;
+        
+    }
+
+    div.login a{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    #imgUser{
+        visibility: hidden;
+    }
+    #botao{
+        position: relative;
+        left: 0px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #bloco1{
+        padding-right:20% ;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+   
+}
