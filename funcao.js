@@ -17,7 +17,7 @@ function ordinal(){
         let form = document.getElementById('form')
         let campo = document.createElement('input')
         campo.className = 'form-control'
-        campo.placeholder = 'Informe a ordem da variáveis'
+        campo.placeholder = 'Informe a ordem da variáveis separadas por [;]'
         campo.id = 'dadoOrdinal'
         form.appendChild(campo)
     }else{
@@ -1442,4 +1442,45 @@ function showtable(){
     
     linhaFoot.appendChild(celulaFoot)
     tbody.appendChild(linhaFoot)
+    document.getElementById('dadoOrdinal').style.display = "none"
+
 }
+// comeca funcao binomial
+
+
+function calculaa(){
+    let n = Number(document.getElementById('tamanhoamostra').value)   
+    let p = Number(document.getElementById('tamanhosucesso').value).toFixed(1) 
+    let q = Number(document.getElementById('tamanhofracasso').value).toFixed(1) 
+    let resultadofim = document.getElementById('resultado1')
+    let valorevent = (document.getElementById('tamanhoevento'))   
+    let evento = valorevent.value
+    let eventvetor = []
+    let k = []
+    if(n === '' || p === '' || q === '' || evento === ''){
+        swal("Atenção", "Informe dados válidos!", "error");
+        return
+    }
+    eventvetor.push(evento)
+    let eventoNumber = (eventvetor.toString().split(';'));
+    k = eventoNumber.map(num => Number(num))
+   const fatorial = (x) => x === 0 || x === 1 ? 1 : x * fatorial(x - 1)
+    let probabilidade = []
+    let analisecombinatoria = []
+    for(let i = 0; i <= k.length - 1; i++){
+        analisecombinatoria[i] = fatorial(n) / (fatorial(n - k[i]) * fatorial(k[i]))
+        probabilidade[i] = analisecombinatoria[i] * (p**k[i]) * (q**(n - k[i]))
+    }
+    let calculaprob = probabilidade.reduce((acum, n) => acum += n)
+    calculaprob = (calculaprob * 100).toFixed(2)
+    let mostraprobabilidade = document.createElement('h2')
+    mostraprobabilidade.innerText = `Probabilidade é de ${calculaprob} %`
+    document.getElementById('resultado1').innerHTML = ''
+    resultadofim.appendChild(mostraprobabilidade)
+    
+}
+
+
+
+
+
