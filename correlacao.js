@@ -196,25 +196,16 @@ for (var i in x) {
   x2Soma += Math.pow(parseInt(x[i]), 2);
   y2Soma += Math.pow(parseInt(y[i]), 2);
 }
-var nomevarx = document.getElementById('nomevarX').value;
-var nomevary = document.getElementById('nomevarY').value;
-
 var n = x.length;
 var r = ((n * xySoma) - (xSoma * ySoma)) / Math.sqrt((n * x2Soma - Math.pow(xSoma, 2)) * (n * y2Soma - Math.pow(ySoma, 2)));    
     for(let i = 0; i < dadosNumX.length; i++){   
             $(document).ready(function() {   
                 Highcharts.chart('graficoCorrelacao', {
                 xAxis: {
-                  title: {
-                    text:nomevarx
-                },
                   min: Xmin - 1,
                   max: Xmax + 1
                 },
                 yAxis: {
-                  title: {
-                    text: nomevary
-                },
                   min: Ymin,
                   max: Ymax
                 },
@@ -228,7 +219,6 @@ var r = ((n * xySoma) - (xSoma * ySoma)) / Math.sqrt((n * x2Soma - Math.pow(xSom
                     [Xmin, ResolveEquacao(Xmin, false)],
                     [Xmax, ResolveEquacao(Xmax, false)]
                   ],
-                 
                   marker: {
                     enabled: false
                   },
