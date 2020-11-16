@@ -1478,6 +1478,7 @@ function calculaa(){
     document.getElementById('resultado1').innerHTML = ''
     resultadofim.appendChild(mostraprobabilidade)
     
+<<<<<<< HEAD
 }
 
 // TESTE---------------------------------------
@@ -1656,6 +1657,11 @@ function calcular(){
     tbody.appendChild(linhaBody)
 
 }
+=======
+}
+
+
+>>>>>>> d17f09d48a5b7a9399e3b4df007f2c644c95753f
 
 
 
