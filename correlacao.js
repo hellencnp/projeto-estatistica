@@ -72,7 +72,7 @@ function calcular(){
     var r = 0
     document.getElementById('div_projecao').innerHTML = ''
     if (dadosVarX == "" || dadosVarY == ""){
-        swal("Ops!", "Digite dados váldddidos!", "error");
+        swal("Ops!", "Digite dados válidos!", "error");
         document.getElementById('dadosX').focus()
         return
     }
