@@ -1450,8 +1450,8 @@ function showtable(){
 
 function calculaa(){
     let n = Number(document.getElementById('tamanhoamostra').value)   
-    let p = Number(document.getElementById('tamanhosucesso').value).toFixed(1) 
-    let q = Number(document.getElementById('tamanhofracasso').value).toFixed(1) 
+    let p = Number(document.getElementById('tamanhosucesso').value).toFixed(2) 
+    let q = Number(document.getElementById('tamanhofracasso').value).toFixed(2) 
     let resultadofim = document.getElementById('resultado1')
     let valorevent = (document.getElementById('tamanhoevento'))   
     let evento = valorevent.value
